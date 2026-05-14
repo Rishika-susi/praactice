@@ -1,6 +1,6 @@
 its time to began
 
-it already endeed
+it already ended and endeed
 
 i am doing well
 
@@ -8,3 +8,6 @@ i am doing well
 
 
 hloo branches are here
+
+
+started pull requests 
