@@ -1,0 +1,15 @@
+name:  First CI Pipeline
+on:  push
+  jobs:
+    ci-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Start
+        run: echo "CI pipeline started"
+
+      - name: Show Files
+        run: ls
+
+      - name: Print Success
+        run: echo "CI pipeline completed successfully"
