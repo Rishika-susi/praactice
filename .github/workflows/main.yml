@@ -1,11 +1,21 @@
-name: First Workflow
+name: Python CI Pipeline
 
 on: push
 
 jobs:
-  hello:
+  test-python:
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Message
-        run: echo "Hello GitHub Actions"
+
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run Python File
+        run: python app.py
